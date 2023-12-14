@@ -1,0 +1,14 @@
+numpy
+os
+Pillow
+matplotlib
+scikit-image
+math
+scipy
+tabulate
+h5py
+opencv-python
+re
+seaborn
+scikit-learn
+pywavelets
