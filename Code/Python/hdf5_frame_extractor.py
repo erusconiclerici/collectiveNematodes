@@ -3,6 +3,28 @@ import glob
 import h5py
 import cv2
 
+# This is the ExtractedFrames Sturtcure now /Volumes/TOSHIBA_EXT/Phenotype_features_collective/ExtractedFrames/
+
+#     ├─ Strain1/
+#     │   ├─ ExperimentName1/
+#     │   │   ├─ 000001.jpg
+#     │   │   ├─ 000002.jpg
+#     │   │   ├─ 000003.jpg
+#     │   │   └─ ...
+#     │   ├─ ExperimentName2/
+#     │   │   ├─ 000001.jpg
+#     │   │   ├─ 000002.jpg
+#     │   │   └─ ...
+#     │   └─ ...
+#     ├─ Strain2/
+#     │   ├─ ExperimentName3/
+#     │   │   ├─ 000001.jpg
+#     │   │   ├─ 000002.jpg
+#     │   │   └─ ...
+#     │   └─ ...
+#     └─ ...
+
+
 def ensure_directory_exists(path):
     if not os.path.exists(path):
         os.makedirs(path)
