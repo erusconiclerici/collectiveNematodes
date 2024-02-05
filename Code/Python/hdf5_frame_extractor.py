@@ -48,7 +48,7 @@ def create_output_directories_for_experiments(root_path, common_folder='Extracte
 
     return output_dirs
 
-def extract_frames_from_hdf5(file_path, output_directory, step=500):
+def extract_frames_from_hdf5(file_path, output_directory, step=100):
     with h5py.File(file_path, 'r') as hdf:
         img_ds2 = hdf['/mask']
         for i in range(0, img_ds2.shape[0], step):
